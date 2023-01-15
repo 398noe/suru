@@ -1,4 +1,4 @@
-import "regenerator-runtime/runtime";
+import "regenerator-runtime";
 import { useEffect, useState } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 import { MdOutlineMic } from "react-icons/md";
