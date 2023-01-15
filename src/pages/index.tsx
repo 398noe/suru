@@ -42,7 +42,7 @@ export default function Index() {
 	}, [finalTranscript])
 
 	return (
-		<div className="h-screen w-screen flex justify-center items-center">
+		<div className="h-screen w-screen flex justify-center items-center p-4">
 			<div className="flex w-12 h-12">
 				{
 					listening ? (
