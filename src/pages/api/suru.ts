@@ -32,7 +32,7 @@ export const suru = async (req: NextApiRequest, res: NextApiResponse) => {
             model: "text-davinci-003",
             prompt: question,
             temperature: 0.9,
-            max_tokens: 100,
+            max_tokens: 70,
         });
         res.status(200).json({
             answer: answer.data.choices[0].text

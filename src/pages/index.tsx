@@ -27,7 +27,7 @@ export default function Index() {
 
 	const askAI = async (question: string): Promise<string | undefined> => {
 		try {
-			const response = await fetch("/api/test", {
+			const response = await fetch("/api/suru", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -62,7 +62,6 @@ export default function Index() {
 				console.log(responseAnswer);
 				// 読み上げたい文章
 				const readTranscript = responseAnswer;
-
 
 				if (readTranscript !== undefined) {
 					const message = new SpeechSynthesisUtterance();
